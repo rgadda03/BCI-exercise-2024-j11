@@ -235,7 +235,7 @@ public class UserServiceImpl implements UserService {
 		}	
 	}
 	
-	public List<PhoneDTO> convertirEntityAPhone (List<PhoneEntity> phonesRequest){
+	private List<PhoneDTO> convertirEntityAPhone (List<PhoneEntity> phonesRequest){
 		
 		List<PhoneDTO> list =  null;
 		if (phonesRequest != null) {
