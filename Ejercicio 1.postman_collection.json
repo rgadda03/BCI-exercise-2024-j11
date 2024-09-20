@@ -1,0 +1,53 @@
+{
+	"info": {
+		"_postman_id": "72927477-2e38-430b-80e5-46e40339f3be",
+		"name": "Ejercicio 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "32888997"
+	},
+	"item": [
+		{
+			"name": "signUp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"dasd\",\r\n  \"email\": \"asdasdsd@sadas.com\",\r\n  \"password\": \"as2f1hzxSvbn\",\r\n  \"phones\": [\r\n    {\r\n      \"number\": 1,\r\n      \"citycode\": 2,\r\n      \"countrycode\": \"AR\"\r\n    },\r\n    {\r\n      \"number\": 10,\r\n      \"citycode\": 20,\r\n      \"countrycode\": \"AR\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/sign-up"
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/login?token=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhc2Rhc2RzZEBzYWRhcy5jb20iLCJleHAiOjE3MjI2OTEyOTIsImlhdCI6MTcyMjQ3NTI5Mn0.S8nqBaCQosS4JsaS2tihGQ1LIG9Wc-cwX1_HJcJ3QfpTk6MtuPtCX7OJySuz62vSnlkdtxywAUu4bExmMnPyPw",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhc2Rhc2RzZEBzYWRhcy5jb20iLCJleHAiOjE3MjI2OTEyOTIsImlhdCI6MTcyMjQ3NTI5Mn0.S8nqBaCQosS4JsaS2tihGQ1LIG9Wc-cwX1_HJcJ3QfpTk6MtuPtCX7OJySuz62vSnlkdtxywAUu4bExmMnPyPw"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
