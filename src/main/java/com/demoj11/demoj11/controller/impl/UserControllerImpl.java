@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.demoj11.demoj11.controller.UserController;
 import com.demoj11.demoj11.dto.ErrorValidacionDTO;
 import com.demoj11.demoj11.dto.LoginResponseDTO;
 import com.demoj11.demoj11.dto.RegisterRequestDTO;
@@ -23,12 +22,11 @@ import lombok.extern.slf4j.Slf4j;
 @RestController
 @RequiredArgsConstructor
 @Slf4j
-public class UserControllerImpl implements UserController{
+public class UserControllerImpl{
 	
 	@Autowired
 	private UserService userService;
 
-	@Override
 	@PostMapping("/sign-up")
 	public RegisterResponseDTO signUp(@RequestBody RegisterRequestDTO request) throws SuperErrorException  {
 		
@@ -41,7 +39,6 @@ public class UserControllerImpl implements UserController{
 		return response;
 	}
 
-	@Override
 	@GetMapping("/login")
 	public LoginResponseDTO login(@RequestParam String token) throws SuperErrorException {
 		
