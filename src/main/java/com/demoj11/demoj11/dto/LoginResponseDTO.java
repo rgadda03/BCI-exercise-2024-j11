@@ -16,7 +16,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Builder
 public class LoginResponseDTO {
-	
+
 	private UUID id; //UUID s232s-sadas2-2321sads-etc
 	private LocalDate created;
 	private LocalDate lastLogin;

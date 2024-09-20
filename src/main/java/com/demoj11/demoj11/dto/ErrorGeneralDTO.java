@@ -16,20 +16,20 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Builder
 public class ErrorGeneralDTO extends SuperErrorException{
-	
+
 	private static final long serialVersionUID = 1L;
-	
+
 	private Timestamp timestamp;
 	private int codigo;
 	private String detail;
-	
-	
+
+
 	public ErrorGeneralDTO(int codigo, String detail) {
 		super();
 		this.codigo = codigo;
 		this.detail = detail;
 	}
-	
-	
-	
+
+
+
 }

@@ -23,31 +23,31 @@ import lombok.extern.slf4j.Slf4j;
 @RequiredArgsConstructor
 @Slf4j
 public class UserControllerImpl{
-	
+
 	@Autowired
 	private UserService userService;
 
 	@PostMapping("/sign-up")
 	public RegisterResponseDTO signUp(@RequestBody RegisterRequestDTO request) throws SuperErrorException  {
-		
+
 		log.info("sign-up - Inicio ControllerImpl");
-		
+
 		RegisterResponseDTO response = userService.signUp(request);
-		
+
 		log.info("sign-up - Fin ControllerImpl");
-		
+
 		return response;
 	}
 
 	@GetMapping("/login")
 	public LoginResponseDTO login(@RequestParam String token) throws SuperErrorException {
-		
+
 		log.info("login - Inicio ControllerImpl");
-		
+
 		LoginResponseDTO response = userService.login(token);
-		
+
 		log.info("login - Fin ControllerImpl");
-		
+
 		return response;
 	}
 

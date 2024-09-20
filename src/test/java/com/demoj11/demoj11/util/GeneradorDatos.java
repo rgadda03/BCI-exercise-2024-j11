@@ -11,52 +11,52 @@ import com.demoj11.demoj11.entity.PhoneEntity;
 import com.demoj11.demoj11.entity.UserEntity;
 
 public class GeneradorDatos {
-	
+
 	public static PhoneDTO generarPhoneRequestDTO1() {
 		return PhoneDTO.builder()
-							.number(12312321)
-							.citycode(1)
-							.countrycode("101")
-							.build();
+				.number(12312321)
+				.citycode(1)
+				.countrycode("101")
+				.build();
 	}
-	
+
 	public static PhoneDTO generarPhoneRequestDTO2() {
 		return PhoneDTO.builder()
-							.number(45645645)
-							.citycode(2)
-							.countrycode("101")
-							.build();
+				.number(45645645)
+				.citycode(2)
+				.countrycode("101")
+				.build();
 	}
-	
+
 	public static PhoneDTO generarPhoneRequestDTO3() {
 		return PhoneDTO.builder()
-							.number(9871231)
-							.citycode(1)
-							.countrycode("101")
-							.build();
+				.number(9871231)
+				.citycode(1)
+				.countrycode("101")
+				.build();
 	}
-	
+
 	public static RegisterRequestDTO generarRegisterRequestDTO1() {
 		return RegisterRequestDTO.builder()
-									.name("nombre")
-									.email("email1@sadas.com")
-									.password("1sadsadsa")
-									.phones(null)
-									.build();
+				.name("nombre")
+				.email("email1@sadas.com")
+				.password("1sadsadsa")
+				.phones(null)
+				.build();
 	}
-	
+
 	public static UserEntity generarUserEntityFrom() {
 		List<PhoneEntity> phoneList = new ArrayList<>();
-		
+
 		PhoneEntity phone1 = PhoneEntity.builder()
-											.phone_id(null)
-											.number(12312321L)
-											.city_code(1)
-											.country_code("101")
-											.user(null)
-											.build();
+				.phone_id(null)
+				.number(12312321L)
+				.city_code(1)
+				.country_code("101")
+				.user(null)
+				.build();
 		phoneList.add(phone1);
-		
+
 		PhoneEntity phone2 = PhoneEntity.builder()
 				.phone_id(null)
 				.number(45645645L)
@@ -65,7 +65,7 @@ public class GeneradorDatos {
 				.user(null)
 				.build();
 		phoneList.add(phone2);
-		
+
 		return UserEntity.builder()
 				.user_id(null)
 				.name("nombre")
@@ -78,7 +78,7 @@ public class GeneradorDatos {
 				.phones(phoneList)
 				.build();
 	}
-	
+
 	public static UserEntity generarUserEntityTo() {
 		return UserEntity.builder()
 				.user_id(UUID.fromString("c8b7fe6d-597b-47f1-a23e-61abc616d103"))
@@ -92,5 +92,5 @@ public class GeneradorDatos {
 				.phones(null)
 				.build();
 	}
-	
+
 }

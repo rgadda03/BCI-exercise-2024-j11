@@ -18,7 +18,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @EqualsAndHashCode(callSuper=false)
 public class ErrorGeneralException{
-	
+
 	private List<ErrorException> error;
-	
+
 }

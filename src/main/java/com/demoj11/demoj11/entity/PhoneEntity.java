@@ -24,14 +24,14 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name= "phones")
 public class PhoneEntity implements Serializable{
-	
+
 	private static final long serialVersionUID = 4088727029680737417L;
-	
+
 	@Id
 	@Column (name = "phone_id")
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private UUID phone_id;
-	
+
 	@Column (name = "number")
 	private Long number;
 
@@ -40,16 +40,16 @@ public class PhoneEntity implements Serializable{
 
 	@Column (name = "country_code")
 	private String country_code;
-	
-    @ManyToOne
-    @JoinColumn(name = "user_id")
-    private UserEntity user;
+
+	@ManyToOne
+	@JoinColumn(name = "user_id")
+	private UserEntity user;
 
 	@Override
 	public String toString() {
 		return "PhoneEntity [phone_id=" + phone_id + ", number=" + number + ", city_code=" + city_code
 				+ ", country_code=" + country_code + "]";
 	}
-    
-    
+
+
 }

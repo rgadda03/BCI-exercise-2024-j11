@@ -17,13 +17,13 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Builder
 public class RegisterResponseDTO {
-	
+
 	private UUID id; //UUID s232s-sadas2-2321sads-etc
 	private LocalDate created;
 	private LocalDate lastLogin;
 	private String token;
 	@JsonProperty("isActive")
 	private boolean isActive;
-	
-	
+
+
 }
