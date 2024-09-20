@@ -1,8 +1,10 @@
-package com.demoj11.demoj11.exception;
+package com.demoj11.demoj11.dto;
 
 
 import java.io.Serializable;
 import java.sql.Timestamp;
+
+import com.demoj11.demoj11.exception.SuperErrorException;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

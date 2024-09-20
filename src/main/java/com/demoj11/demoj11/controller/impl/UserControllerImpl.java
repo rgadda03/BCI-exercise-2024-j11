@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.demoj11.demoj11.controller.UserController;
+import com.demoj11.demoj11.dto.ErrorValidacionDTO;
 import com.demoj11.demoj11.dto.LoginResponseDTO;
 import com.demoj11.demoj11.dto.RegisterRequestDTO;
 import com.demoj11.demoj11.dto.RegisterResponseDTO;
 import com.demoj11.demoj11.exception.ErrorGeneralException;
-import com.demoj11.demoj11.exception.ErrorValidacionDTO;
 import com.demoj11.demoj11.exception.SuperErrorException;
 import com.demoj11.demoj11.service.UserService;
 
