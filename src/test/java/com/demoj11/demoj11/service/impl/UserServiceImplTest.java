@@ -20,7 +20,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-import com.demoj11.demoj11.converter.JwtTokenUtil;
+import com.demoj11.demoj11.Util.RequestValidator;
 import com.demoj11.demoj11.dto.ErrorGeneralDTO;
 import com.demoj11.demoj11.dto.ErrorValidacionDTO;
 import com.demoj11.demoj11.dto.LoginResponseDTO;
@@ -32,8 +32,8 @@ import com.demoj11.demoj11.entity.UserEntity;
 import com.demoj11.demoj11.exception.SuperErrorException;
 import com.demoj11.demoj11.repository.PhoneRepository;
 import com.demoj11.demoj11.repository.UserRepository;
+import com.demoj11.demoj11.security.JwtTokenUtil;
 import com.demoj11.demoj11.util.GeneradorDatos;
-import com.demoj11.demoj11.validator.RequestValidator;
 
 import lombok.extern.slf4j.Slf4j;
 

@@ -1,4 +1,4 @@
-package com.demoj11.demoj11.encrypt;
+package com.demoj11.demoj11.Util;
 
 import org.jasypt.encryption.StringEncryptor;
 import org.jasypt.encryption.pbe.PooledPBEStringEncryptor;

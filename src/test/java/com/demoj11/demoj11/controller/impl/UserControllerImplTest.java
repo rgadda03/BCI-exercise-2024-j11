@@ -17,6 +17,7 @@ import org.mockito.Mock;
 import org.mockito.internal.matchers.Any;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import com.demoj11.demoj11.Util.RequestValidator;
 import com.demoj11.demoj11.dto.LoginResponseDTO;
 import com.demoj11.demoj11.dto.PhoneDTO;
 import com.demoj11.demoj11.dto.RegisterRequestDTO;
@@ -25,7 +26,6 @@ import com.demoj11.demoj11.entity.PhoneEntity;
 import com.demoj11.demoj11.exception.SuperErrorException;
 import com.demoj11.demoj11.service.UserService;
 import com.demoj11.demoj11.util.GeneradorDatos;
-import com.demoj11.demoj11.validator.RequestValidator;
 
 import lombok.extern.slf4j.Slf4j;
 

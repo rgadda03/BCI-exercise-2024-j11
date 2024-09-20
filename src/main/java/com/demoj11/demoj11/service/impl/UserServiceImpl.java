@@ -11,21 +11,21 @@ import org.jasypt.encryption.StringEncryptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.demoj11.demoj11.converter.JwtTokenUtil;
+import com.demoj11.demoj11.Util.RequestValidator;
+import com.demoj11.demoj11.Util.jasyptEncryptorConfig;
 import com.demoj11.demoj11.dto.ErrorGeneralDTO;
 import com.demoj11.demoj11.dto.ErrorValidacionDTO;
 import com.demoj11.demoj11.dto.LoginResponseDTO;
 import com.demoj11.demoj11.dto.PhoneDTO;
 import com.demoj11.demoj11.dto.RegisterRequestDTO;
 import com.demoj11.demoj11.dto.RegisterResponseDTO;
-import com.demoj11.demoj11.encrypt.jasyptEncryptorConfig;
 import com.demoj11.demoj11.entity.PhoneEntity;
 import com.demoj11.demoj11.entity.UserEntity;
 import com.demoj11.demoj11.exception.SuperErrorException;
 import com.demoj11.demoj11.repository.PhoneRepository;
 import com.demoj11.demoj11.repository.UserRepository;
+import com.demoj11.demoj11.security.JwtTokenUtil;
 import com.demoj11.demoj11.service.UserService;
-import com.demoj11.demoj11.validator.RequestValidator;
 
 import lombok.extern.slf4j.Slf4j;
 
